@@ -1,0 +1,10 @@
+<nav>
+    <ul class="nav {{include.navclass}}">
+
+        <li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+        <li><a href="{{site.baseurl}}/aboutme.html"  class="{% if page.url contains 'aboutme' or page.url contains 'aboutmeNew' %}current{% endif %}">Me</a></li>
+        <li><a href="{{site.baseurl}}/design/" class="{% if page.url contains 'design' %}current{% endif %}">Design</a></li>
+        <li><a href="{{site.baseurl}}/music.html">Music</a></li>
+        <li><a href="{{site.baseurl}}/photography.html">Photography</a></li>
+    </ul>
+</nav>
